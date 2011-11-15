@@ -46,6 +46,8 @@
  * $this->{$this->modelClass}->setUserData($this->activeUser);
  * }
  *
+ * This is not used any longer, as AuthComponent collect the user data instead.
+ *
  * Where "$activeUser" should be an array in the standard format for the User model used :
  *
  * $activeUser = array( $UserModel->alias => array( $UserModel->primaryKey => 123, $UserModel->displayField => 'Alexander'));
@@ -57,8 +59,8 @@
  * @co-author Carl Erik Fyllingen
  * @contributor Miha
  * @category Behavior
- * @version 2.2
- * @modified 3.june 2009 by Miha
+ * @version 2.3
+ * @modified 15.november 2011 by Eskil
  */
 
 class LogableBehavior extends ModelBehavior {
